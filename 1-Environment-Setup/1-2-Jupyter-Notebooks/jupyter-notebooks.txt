@@ -1,0 +1,275 @@
+# 2 ways to start jupyter notebook is 
+#1. by running anaconda UI and running jupyter notebook
+#2. Open command prompt, cd to the directory where you want to save notebooks and run "jupyter notebook" command there
+
+
+Let's go ahead and explore the notebooks as well as get a feel for how to effectively use them.
+I'm going to go ahead and just remind you how you can open up a Jupiter notebook.
+I'm going to go ahead and jump to the command prompt now.
+All right.
+Here I am at my command prompt as a reminder if you're using Mac OS.
+Go ahead and just use your terminal for this.
+If you're using Windows just go ahead and come over here and type in ACMD and select your command prompt
+.
+There's also in an icon the command prompt you can use that as well.
+That's the command prompt that comes with the Anaconda distribution.
+All right.
+So you go ahead and come to the command prompt and then type in j u p y t r space notebook and hit enter
+.
+Keep in mind this is going to start a Jupiter notebook wherever you are in the command prompt.
+So for instance I'm going to delete this real quick.
+I am under C users and then my middle name here Marysia and that's where my notebook is going to get
+started.
+If I want to start my notebooks in another directory I need to change directory the way I can change
+directory is by using CD and then typing in the next file that I want.
+So let's say I wanted to go to my downloads folder because that's where I downloaded the zip file.
+I could start typing in D O N then you can actually tab autocomplete this and then it should take you
+to.
+If you go out and click enter now downloads and then I could type in DUPERE notebook enter and run this
+and now my Jubran notebook file is going to be when I show it in my browser under the downloads folder
+.
+If you want to go ahead and go back up one folder you can type in CD.
+That's change the rectory space dot dot and that will take you back up one directory.
+You can go ahead and just look up basic command prompt lines.
+There are a little different.
+The penny for using Mac OS or Windows for instance if you want to see all the directory folders and
+your current directory in Windows that's d I are the C directory.
+And this basically shows you all the files here in your current directory.
+If you are on Mac you can type in L S for list all of them.
+All right then to clear everything you have here.
+If you're on Windows you can just type in C L S.
+If you're on a Mac and type in the word clear let me go ahead and start the Jupiter note book and when
+to hit enter and it's going to open up a chip in a notebook in my browser.
+Here it is.
+I'm going to go ahead and find where I actually saved the unzips file.
+Here it is python data science machine learning boot camp and the Pentagon unzip program you used.
+You may or may not have this dasht master at the end but if you go ahead and click on this folder you'll
+see quite a few folders here.
+Python for data analysis for data visualization.
+Python crash course machine learning sections data kept some projects big data and Sparc and more.
+The very first section is under this folder.
+Python crash course if you click on that section where that folder you'll have the notebook.
+And here you see the dot IPY and be files.
+So pretty much for every lecture where you see me coding something out there is a folder that has the
+overall section name and then they'll be a subfolder of the actual section name and then the notebook
+files which correspond to the lecturer names.
+So the very first one is python crash course.
+You can go ahead and click on this.
+They'll take a little time to load.
+Here it is and then everything I'll be typing out throughout the lecture is here for you and pretty
+much at the beginning of every section of the course.
+I'll remind you on where you can find the actual note books for that section of the Course answers quite
+a few lectures and it may be hard to find it sometimes.
+I'll be there to guide you and if you ever have any questions on where to find things 
+
+Let's go ahead and explore the notebooks as well as get a feel for how to effectively use them.
+I'm going to go ahead and just remind you how you can open up a Jupiter notebook.
+I'm going to go ahead and jump to the command prompt now.
+All right.
+Here I am at my command prompt as a reminder if you're using Mac OS.
+Go ahead and just use your terminal for this.
+If you're using Windows just go ahead and come over here and type in ACMD and select your command prompt
+.
+There's also in an icon the command prompt you can use that as well.
+That's the command prompt that comes with the Anaconda distribution.
+All right.
+So you go ahead and come to the command prompt and then type in j u p y t r space notebook and hit enter
+.
+Keep in mind this is going to start a Jupiter notebook wherever you are in the command prompt.
+So for instance I'm going to delete this real quick.
+I am under C users and then my middle name here Marysia and that's where my notebook is going to get
+started.
+If I want to start my notebooks in another directory I need to change directory the way I can change
+directory is by using CD and then typing in the next file that I want.
+So let's say I wanted to go to my downloads folder because that's where I downloaded the zip file.
+I could start typing in D O N then you can actually tab autocomplete this and then it should take you
+to.
+If you go out and click enter now downloads and then I could type in DUPERE notebook enter and run this
+and now my Jubran notebook file is going to be when I show it in my browser under the downloads folder
+.
+If you want to go ahead and go back up one folder you can type in CD.
+That's change the rectory space dot dot and that will take you back up one directory.
+You can go ahead and just look up basic command prompt lines.
+There are a little different.
+The penny for using Mac OS or Windows for instance if you want to see all the directory folders and
+your current directory in Windows that's d I are the C directory.
+And this basically shows you all the files here in your current directory.
+If you are on Mac you can type in L S for list all of them.
+All right then to clear everything you have here.
+If you're on Windows you can just type in C L S.
+If you're on a Mac and type in the word clear let me go ahead and start the Jupiter note book and when
+to hit enter and it's going to open up a chip in a notebook in my browser.
+Here it is.
+I'm going to go ahead and find where I actually saved the unzips file.
+Here it is python data science machine learning boot camp and the Pentagon unzip program you used.
+You may or may not have this dasht master at the end but if you go ahead and click on this folder you'll
+see quite a few folders here.
+Python for data analysis for data visualization.
+Python crash course machine learning sections data kept some projects big data and Sparc and more.
+The very first section is under this folder.
+Python crash course if you click on that section where that folder you'll have the notebook.
+And here you see the dot IPY and be files.
+So pretty much for every lecture where you see me coding something out there is a folder that has the
+overall section name and then they'll be a subfolder of the actual section name and then the notebook
+files which correspond to the lecturer names.
+So the very first one is python crash course.
+You can go ahead and click on this.
+They'll take a little time to load.
+Here it is and then everything I'll be typing out throughout the lecture is here for you and pretty
+much at the beginning of every section of the course.
+I'll remind you on where you can find the actual note books for that section of the Course answers quite
+a few lectures and it may be hard to find it sometimes.
+I'll be there to guide you and if you ever have any questions on where to find things All right then after that we'll start Python for data analysis.
+You'll start the number by s.c or click on PI and see it notebook's for that.
+Let me go ahead and just walk through how the Jupiter note book system works in a general sense.
+I'm going to go all the way back up to the master and then I'm going to click new and here since I have
+kind of several environments.
+I'm going to click this one but you can click Python or Python 3 or whatever it's good and click on
+it should be fine.
+Again you can just click new whatever it says in notebooks.
+You should be fine to click on it.
+You'll get something like this to retitle this notebook.
+You don't just click here under the untitled section and name it whatever you want.
+My notebook for instance click OK and I'll name it.
+Let me go ahead and show you the basics.
+This is a code cell which means I can type in Python code into the cell and then run it as a very basic
+example I can say prints hello and then I can run the cell by clicking here on run and Ill go ahead
+and run and show me the output below the cell.
+I can also do the same thing for basically any Python code if I wanted to know what one plus one is
+.
+I just click run here and it shows me the output in the cell notice since I printed the output here
+it didn't show out since I didn't actually specify to print the output.
+It showed the output cell.
+The facts he said prints one plus one.
+Then it wouldn't show that little out.
+OK.
+So you don't always have to come up here and click this run cell which you can do is actually just to
+shift enter.
+And that's when I put it as a string shift enter.
+And if I do shift enter it will go ahead and run whatever is in that cell.
+So keep that in mind.
+That's a really nice way to just run stuff quickly so you don't have to constantly come over here and
+click run sell.
+Another little trick is alt enter.
+If I do shift and turn on this it just goes down to the next cell.
+But if I do alt enter it will actually insert a cell below it as well.
+So notice the difference here.
+If I just do shift enter on this first cell it runs it.
+And that is how the n changes its number to show you the order of stuff and how it's been run.
+Then if I do enter it actually inputs a cell for me.
+That's a really nice trick and I'll show you why later on when we discuss exercises.
+OK.
+Now you may be wondering how can I save this notebook.
+Can either do control s or click here on the little floppy disk save actually has an autosave feature
+surround every two minutes auto save.
+Or you can just say file and you can do a save and checkpoint here.
+Now you may also be wondering how do I download this notebook as something else.
+Well you can just go to file download as.
+And you actually have a bunch of options here to download.
+If you just want the dot PI file you can just say download as a dot PI and it will download and convert
+this notebook file into a file so you can use it as a normal Python script and whatever ID you want
+.
+Or if you just want the HVM Elano you can click on each T.M. and it will export it to a basic a simple
+file that any browser can show.
+So you have a bunch of options.
+You can go in and check them out.
+Something else I want you to know is if you ever have for instance an infinite while loop running.
+So let's just say this is like running forever and you want to somehow restart your kernel.
+What will happen is under this in me zoom in a bit instead of a number here and end you'll see a low
+Asterix.
+It'll just be running forever.
+What you can do is just go in and say kernel and then restart the kernel say do you want to restart
+the kernel.
+You go ahead and restart.
+Well say restarting kernel and then I'll say kernel ready.
+Basically what happens is this notebook is connected to a kernel and a kernel is kind of just an instance
+of Python running.
+And if something's wrong where Python is crashing maybe you actually wrote a script that just infinitely
+loops or takes a really long time.
+You can always just stop everything by coming over to kernel and clicking restart can also interrupt
+if you just want to interrupt that specific cell but sometimes it doesn't work.
+If you get a really bad while loop that runs forever just keep that in mind.
+OK.
+If you ever need help in addition to everything I just told you here you can always just click help
+and then they'll give you help on a lot of the libraries.
+We're going to be working with as well as just notebook helping click on that it will send you to a
+link where it tells you about the notebooks themselves.
+Keep in mind these notebooks used to be called I Python notebooks but now since Jupiter can run other
+languages such as Juliet and are they're called the Jupiter notebooks.
+Now another thing I wanted to mention is there's more keyboard shortcuts than what I just told you.
+You can go to help click on keyboard shortcuts and it will give you a list of all the keyboard shortcuts
+that are available to you.
+All right.
+That's really the basics of the notebook and pretty much all you need to know as far as you go through
+this course.
+You have any questions that are more specific to a particular topic that you can't find the help here
+.
+Go ahead and search to Kewaunee forums.
+If you can't find that there or in the fake Q Feel free to post the new questions to the Q&A forums
+and I'll be happy to help you out.
+Real quick I wanted to show you what exercises look like throughout this course.
+So for instance let's say you go a python for data analysis.
+You're on the PI section of the Course you've done the lectures and you're ready to begin the exercise
+.
+Every exercise will have solutions file associated with it.
+Don't check out the solutions file first.
+You should check out this exercise file.
+Then you can go ahead and click on the sexercise file and this one will pop up and look something like
+this.
+And this exercise file will have questions for you.
+And then a cell where you can go ahead and answer those questions and a lot of times.
+I'll also show you the expected output.
+So for instance here you want to create an array of zeros.
+Now I know you probably don't know how to do that yet but keep in mind that if you start typing stuff
+in the cell such as prints hello and run this you'll overwrite the output.
+So just keep that in mind and there will be more relevant when you actually get to the exercises.
+Some of you may be wondering is what kind of cell is this.
+The actually just shows text and isn't a code cell.
+Well this is known as a markdown cell.
+If we go ahead and go back to my notebook here everything I've shown you so far is a code cell.
+But what's really awesome about Jupiter notebooks is you can type in notes for yourself in normal markdown
+text so you can come over here look on code.
+Click on markdown and it will convert this into a markdown cell.
+And now if I run the cell it's essentially just basic text for me to type notes for myself which is
+really useful when you're learning.
+You can say something like.
+Use print to print strings.
+Run that little note for yourself and then you can go ahead and type in prints hello etc. and that's
+a really nice way to kind of take notes as you go along throughout the lectures and this also supports
+a markdown formatting.
+So if you're familiar of markdown formatting such as how to use hash tags for bold etc..
+Or maybe do a taluk with just a couple of asterisks lips.
+More bullet points or indentation for a kind of code formatting that's also ported in these markdown
+cells.
+Now we won't go over marked down syntax because I can be a whole nother course but just keep in mind
+if I see something like this type mark down and latex that says it's a markdown cell.
+A common mistake sometimes beginners make is they'll accidently convert this to a markdown cell and
+then wonder hey why isn't my code running.
+If your code is ever not highlighted it probably means that you're only running a markdown cell.
+If you want to change this markdown cell back to a code cell just come up here and select code then
+run this with a shift enter and you're good to go.
+OK so remember shift enter runs a cell and then Alt Enter will run a cell and output a cell below it
+.
+So if you go ahead and click alternate are here so like do again Alt Alt center and in putting a new
+cell.
+Now I'm just referring to what I'm actually doing on my keyboard not want to typing in a string.
+So again one plus one shift enter it runs it one plus one alternator.
+It keeps putting in new cells below it which is really useful for exercises.
+So if you come back here this is exercise.
+Notice I have this output array 1 1 1 on 1.
+I don't want to overwrite that.
+I can just click on this text or mark down cell do enter and it gives me a little cell here for a buffer
+so I can prints whatever I want.
+Shift enter in outputs test.
+All right.
+Don't worry if you didn't completely get all of that because we're going to review all this when we
+actually get to the exercises.
+All right.
+That's basically all you need to know for the Jupiter note books.
+If you have any questions feel free to post and Q&A forums.
+You know I'll be happy to help you out.
+Just keep in mind that the Jupiter notebook system will start wherever you were in your command prompt
+or your terminal.
+You'll need a change directory using CD if you want to run or save your notebooks in another place in
+your computer.
+All right thanks everyone and I'll see at the next lecture.

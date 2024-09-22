@@ -1,0 +1,301 @@
+Hi, everyone.
+Welcome to the "Setup and Installation" lecture.
+So the objectives for this lecture are
+to install Python with Anaconda,
+download the ZIP file of notebooks
+that comes with this course,
+and then to open Jupyter and explore the notebooks
+and make sure everything is working for you.
+So just right off the bat, what is Anaconda?
+Anaconda is a distribution of Python.
+When we say distribution,
+that means it's actually not just including Python,
+but it's also including lots of libraries and tools
+that we use in this course,
+and it also includes its own virtual environment system
+which we talk about later on in this course.
+It's essentially an all-in-one install
+that's extremely popular in data science
+and machine learning.
+So if you ever take any other training in data science
+and machine learning such as a corporate training,
+it's highly likely that they'll also ask you
+to install Anaconda.
+So it's extremely popular
+in data science and machine learning,
+which is why we're using it in this course.
+So once we install Anaconda and get Python up and running,
+it's actually going to come
+with a development environment called Jupyter,
+and Jupyter is a development environment
+where we can write normal Python code.
+But what's really cool about it is it also allows us
+to display images and then write down markdown notes all
+within the same notebook.
+So it's a really great learning tool
+and it's a great teaching tool as well,
+which is why I use it throughout this course.
+And it's also one
+of the most popular development environments
+in data science for exploring and analyzing data.
+And as you learn more and more
+about the course and the libraries,
+then you'll see why it's such a popular tool
+because you get to see everything on a single screen.
+You get to see the images, your data,
+the sheets, et cetera, all in one window.
+Now I wanna make it it clear.
+If you're an experienced Python user
+and maybe you've tried Jupyter but really didn't like it,
+you have your own setup like Sublime Text or PyCharm
+or any other sort of environment,
+please feel free
+to use any development environment you prefer.
+Sometimes, some students just don't like Jupyter
+and they like their own thing, that's totally fine.
+We're not forcing you to use Jupyter.
+The Python code we're gonna show
+throughout the course works in any environment.
+So I just wanna be clear.
+Please choose any development environment you prefer,
+but if you're totally new to this,
+I would highly recommend you go
+with the Anaconda and Jupyter setup we show here
+that we can follow along with this course,
+and I hope you learn to love it as much as I do.
+Okay, so let's get started.
+We're gonna download Anaconda.
+Go ahead and go to www.anaconda.com
+or just simply Google search Anaconda Python download,
+and we should end up at the same page.
+I'm gonna go ahead and jump
+to anaconda.com in my browser now.
+All right, here I am at anaconda.com.
+Keep in mind, anaconda.com,
+this page actually updates itself quite frequently.
+So the style may change and you may see different things.
+For example, right now they're gonna have an AnacondaCON.
+So the style of the page looks a little different
+and the buttons may be
+or the overall look of the page may be different for you
+when you actually visit this.
+But essentially, what we're looking
+for is the Download section.
+And you'll see some products here, "Why Anaconda?"
+But somewhere on this page, you should see Download.
+And if you're having trouble finding that,
+you can just go ahead and Google search Anaconda download,
+and it should eventually take you to this page.
+So what we see here is the download
+for Python 3 and Python 2.
+This course uses the latest version of Python 3,
+so we'll go ahead and use that for our installer.
+The one thing you need to make sure is
+that you select the correct installer
+for your operating system.
+So right now I'm on a Windows computer,
+so I will choose the Windows installer for Anaconda.
+Now if you're on macOS,
+go ahead and choose the macOS installer.
+If you're on Linux, go ahead and choose the Linux installer.
+Something you should note out is for macOS,
+there's a graphical installer
+and then a command line installer.
+The graphical installer is a lot easier to use.
+Basically has a little window that pops up
+and show, tells you what to do as you go along.
+So I would recommend the graphical installer.
+So I'll go ahead and since I'm on a Windows computer,
+download the Windows installer for the Python 3 version.
+If you're watching this at some point in the future
+and Python 3.8 has come out, that's totally okay too.
+Basically, we'll just be using Python 3.
+All right, once that's finished downloading,
+we'll go ahead and open up this executable file.
+If you're on macOS, it's gonna probably be some DMG file
+or something that essentially walks you
+through the graphical installer.
+So we'll go ahead and open that up.
+And then you should see essentially the setup wizard jump
+out for you.
+So we'll go ahead and click Next here,
+and then there's a license agreement.
+Go ahead and agree to it.
+And then there's the install for Just Me and All Users.
+If you're on a work computer,
+you probably don't have admin privileges,
+so we'll just go ahead and install it for Just Me.
+Essentially, that means you have
+to log into your user account
+and it'll only work for this particular user account.
+So go ahead and click Next.
+Go ahead and choose the default location
+for the destination folder.
+And then if you're on a Windows computer,
+you'll see this option for Advanced Installation Options.
+And you should actually check both of these boxes.
+One of them says that it's actually not recommended
+of adding Anaconda to your PATH environment variable.
+The reason they say that's not recommended is
+because if you have different versions of Python,
+that may mess around
+and make Anaconda the essentially default version of Python
+on your computer and also the default way
+of running certain actions at your command line.
+I actually do recommend that especially
+if you are already have a previous installation of Python.
+Now if you're an advanced user
+and you understand what it means
+to set a PATH environment variable,
+I'll leave it up to you whether or not you want
+to add Anaconda to your path.
+However, if you're brand new
+and you don't know what adding something
+to your PATH environment variable means,
+then definitely go ahead and select this.
+Even if it says not recommended,
+go ahead and check both boxes.
+That's going to allow you to create virtual environments
+at the command line, which is very useful.
+So then once you've done that, go ahead and select Install.
+All right, now that that has finished installing,
+we should be able to search
+for the Anaconda Navigator on our computer.
+If you begin searching for Anaconda on your computer,
+you should see a couple of options show up,
+one is the Anaconda Prompt
+and the other is the Anaconda Navigator.
+Go ahead and click open the Anaconda Navigator.
+Upon the Anaconda Navigator opening,
+you should see a bunch of applications show up.
+And essentially, this is a really convenient way
+of opening up your development environments.
+And you'll notice that Anaconda actually comes
+with several development environments already included.
+It comes with JupyterLab, Jupyter Notebook,
+Spyder, Qtconsole, and more. The one we're going to be using
+in this course is the Jupyter Notebook.
+Keep in mind there's a JupyterLab,
+which looks really similar
+but we'll actually be using a Jupyter Notebook.
+And as I keep mentioning,
+you're free to use any development environment you choose.
+But we'll be using Jupyter Notebook.
+So what we wanna do is go ahead and launch Jupyter Notebook.
+So click here where it says Launch.
+And then what's going to happen
+is you should see a browser window pop up.
+And here we can see
+that Jupyter Notebook has automatically opened up
+in your browser.
+Now if you don't have Google Chrome as your default browser,
+I would highly recommend you do use it
+because that is usually what works best with Jupyter.
+Don't use an older browser like Internet Explorer.
+Microsoft Edge should be fine, but Internet Explorer,
+that's actually not even supported by Microsoft anymore.
+So I would highly recommend using Google Chrome
+for the Jupyter.
+You can also use things like Firefox, Mozilla.
+Those should technically all work fine as well.
+Okay, so you notice that Jupyter opens in your browser.
+Something I want to clarify is that you do not need
+to be connected to the internet
+in order for Jupyter to work.
+It's merely using your browser
+as a graphical interface window.
+It's not actually connecting to the internet here.
+So you'll notice that I basically see all the folders
+that are on my computer.
+I can see my Desktop folders,
+my Documents, and my Downloads.
+So what I wanna do is download the ZIP file
+of notebooks that comes along for this course
+and then access them through Jupyter.
+So let's go ahead and download that ZIP file.
+Okay, so if you go to the actual Course Content page,
+you'll see the curriculum laid out.
+And you should notice
+under section one, "Course Introduction",
+in the third lecture, Course FAQs,
+there's a ZIP file here that you can download.
+And as you were reading that lecture,
+you should have seen a little resource article point out
+that there's a resource there to download.
+Now keep in mind, if you're viewing a lecture video,
+so for example here,
+I'm viewing essentially our intro,
+"Environment Setup and Installation" lecture.
+If you click over here on the top left,
+it should also be an indication
+that resources can be downloaded
+and you can then see the course content
+and click on this ZIP file
+and it will download the ZIP file.
+So go ahead and download the ZIP file,
+either from course FAQs and I've placed the ZIP file
+in a couple of other lectures in case you missed it,
+including this one and the Jupyter Notebooks lecture.
+It's the same ZIP file,
+it's just there for you to download.
+And go ahead and download it
+and remember where you downloaded it,
+and then unzip that file.
+So right now my version is underneath my Downloads folder,
+so I'm gonna go unzip it.
+All right, so underneath my Downloads folder,
+I'll go ahead and unzip this.
+You should be able to see Extract All
+or if you can download a program like WinRAR or 7-Zip,
+go ahead and do that, really just any way.
+Whatever the typical method you use for unzipping folders,
+go ahead and do that.
+Windows and macOS have a default,
+so go ahead and just extract everything and unzip it.
+So let that unzip.
+And then once that's unzipped, you should see a folder here,
+and you'll see something that says Refactored.
+Go ahead and click on that
+and you'll see all the course notes organized
+in order that they are in the course.
+And if you then double click on these,
+you'll see a bunch of files called IPYNB files.
+Now the thing about these files,
+if you were to try to double click on them
+and open them directly, that wouldn't work.
+They actually need to be opened directly
+through the Jupyter Notebook system.
+So now that we know that our unzipped folder is
+underneath Downloads, we're gonna go back to our browser
+where we had the Jupyter Notebook
+and open the files that way.
+So let me go ahead and jump back to that.
+So here I am, back at Jupyter Notebook.
+Go ahead and find your Downloads folder,
+and then find the folder Py-DS-ML-Bootcamp-master,
+go to the Refactored and then you'll see all the files here.
+And the first one's we're gonna be going over,
+they're all in order, is Python-Crash-Course.
+And then these notebooks, you simply click on them.
+And then once it's done loading,
+you can see all the information here.
+And later on, we'll talk more details
+about how you can actually run the Jupyter Notebooks.
+Keep in mind that previously when I was filming this course,
+we didn't have it organized
+in a numerical fashion like this.
+We just had it organized by general topic,
+but now we've reorganized
+and refactored the actual notebooks and folders
+so that it's a lot clearer.
+You do one first, then two, then three,
+then four, then five, and so on.
+Okay, so that's basically it for our setup.
+You should now be able to run Jupyter Notebook
+and you should have installed Anaconda
+and then downloaded the notes and follow along.
+Please keep in mind that if you're ever getting an error
+with trying to follow along with the video,
+try running our notebooks first,
+specifically our solutions notebook for the exercise.
+A lot of times, it's easy to make a simple typo,

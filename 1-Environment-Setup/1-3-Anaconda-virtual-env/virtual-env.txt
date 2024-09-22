@@ -1,0 +1,150 @@
+Hello everyone and welcome to this optional lecture on Anaconda virtual environments.
+This is a bit of a more advanced topic on how to create virtual environments using the Anaconda distribution
+.
+You can go ahead and feel free to skip this topic if you're not interested in it.
+Let's go ahead and continue.
+Let's talk about what virtual environments are virtual environments allow you to set up a virtual installation
+of python and libraries on your computer.
+That way you can have multiple versions of Python or libraries and easily activate or de-activate these
+environments.
+Let's go ahead and see some examples of why you may want to do this for instance.
+Maybe sometimes you want to program in different versions of a library.
+For example you may have developed a full program that uses Sacket learn version 0.27 and then at some
+point in time the next versions are 0.1 8 is released.
+Maybe you want to explore the new features of 0.20 but don't want to break any of your old code when
+you upgrade.
+This is where you may want to create a virtual environment for that specific version of the library
+.
+In other examples sometimes you want to make sure your library installations are in the correct location
+.
+So for example you may want also multiple versions of Python on your computer so you'll want to make
+sure a python 2.7 version of a library is in the correct location versus a python 3.5 version which
+you can do a virtual environments as have one environment in Python 2.7 and another of Python 3.5.
+There is a virtual E and V library for normal Python distributions that has a lot of the capabilities
+that were going to be going over with Anaconda.
+This virtual ENV library allows you to create virtual environments and it's a virtual environment manager
+.
+Anaconda however which is the recommended distribution of Python that we use in this course already
+has a nice built in virtual environment manager that makes the whole process of creating a virtual environment
+activating and deactivating them very easy.
+Go ahead and check out the resource link for the official documentation that we're going to go over
+now.
+So go ahead and check out the resource link which will take you to this you r l.
+Or if you want you can manually type it in we're just going to the official can the PI data documentation
+or we talk about using environments.
+You can just click on the resource link if you don't want to type this entire file path or your file
+path in your browser.
+Going to go ahead and jump to my browser now explore the documentation a little bit and show you how
+you can use it at your command prompt.
+Let's go ahead and jump to that now.
+OK so here I am at the resource link for managing environments.
+What I want you to do is go ahead and go to create environments and you should see the basic instructions
+here for creating an environment and it's pretty simple as far as a command need to put in to create
+a new environment.
+You're going to go ahead and use the Konda create command followed by dash dash name then whatever name
+you want to call your new environment.
+In this example they're calling the new environment snowflake's and then space in a base package or
+library that you want to initiate that new environments with.
+If you don't put in a package here you may get an error.
+So once you have this full command in your command prompt or terminal after of course installing Anaconda
+distribution of Python Kano's going to ask you do you want to proceed.
+You can type Y for yes and then this creates a new environment called.
+In this case snowflake's that contains this program or package BYO Python.
+If you don't specify a specific version of Python it will use your base version of Python.
+The one that you download to is the anaconda.
+But you can actually specify a specific version of Python.
+It will show you how to do that as well.
+Let me go ahead and jump to my command prompt.
+Put it on here so I can walk you through these steps.
+OK so here is my command prompt.
+I will go ahead and create a virtual environment we'll call it Konda all say condo space create first
+that I'm going to say dash dash and an E for name and let's go ahead and call this just a ridiculous
+name so we know we're actually doing something with fluffy and then we need to put in a library to initiate
+it with.
+Let's go in and start off with NUMP pi.
+Since that's going to be one of the first libraries we learn about I enter they'll fetch the package
+meta data.
+They'll get a list of what it needs to install in Alaska if you want to proceed.
+Now I'll go ahead and say why for yes it will link certain packages together and then extract what it
+needs to extract.
+OK so that's done now.
+To activate this environment I can use activate fluffy to deactivate this environment.
+I use de-activate.
+Let me go in and show you what my base version of Python looks like versus this virtual environments
+version of Python.
+Remember this virtual environment was only initiated with pi.
+So if I just type in Python right now I will get my regular distribution of Anaconda the one I installed
+in this case it's 2.7.
+So for example if I go ahead and say imports num pi as and P enter.
+That works fine if I say import panderers as PD enter.
+That also works fine.
+Let's go ahead and quit from this now and I'm going to now activates my virtual environment which was
+called Fluffy and now you'll notice that in parentheses it says fluffy which lets me know that I'm actually
+inside this virtual environment of fluffy.
+So if I say Python and hit enter I get the same version of Python 2.7 that my base distribution was
+but something interesting is going to happen when I try to import some stuff for important umpires and
+P It imports no problem since I know that's right.
+Activated my virtual environment with if I say import pandas as PD I get an import error.
+No module named panderers.
+The reason for that is because this virtual environment doesn't have Pandurs inside of it.
+If I want to actually make sure that this virtual environment also contains pandas I will need to activate
+it as I've done already and then say Konda install this here or install whatever library you want Jupiter
+sikat learn about play live etc..
+So I'm going to go ahead and just delete this if I want to deactivate fluffy and go back to just my
+original distribution of Python.
+I just say deactivates hit enter and it deactivates that virtual environment.
+Now another active use case for virtual environments is to create an environment that uses a different
+version of Python.
+You can do that simply by saying Konda creates will go in and say dash dash and add me.
+You can also just say dash and single Dashon but will show the full thing dash dash name say the name
+of the virtual environment you want.
+We'll go ahead and call this virtual environment.
+My python 3 version space.
+And then you say Python equals 3.5.
+And here you have the option of just putting in a single library such as pi.
+Or if you want the entire Anaconda's distribution you can type in Anaconda here.
+That takes quite a while longer because remember that's the entire distribution of Anaconda.
+So I'll go in and just say pi.
+So this is going to go ahead and do is say Konda create this new virtual environment called my Python
+3 version space Python equals 3.5 pi.
+Enter I'll fetch the package metadata again.
+Remember it's going to do all of this with Python 3.
+I'll go ahead and say Why yes it will fetch the packages go ahead and solve them.
+I'm going to now jump to the finish of the extraction and installation and now it is complete.
+Let's go ahead and show just typing in Python.
+I have Python 2.7 here that's my base distribution.
+I'm going to go ahead and quit that.
+Now let's go ahead and check out my environments.
+I can say Kondo space info dash dash and a v s and this command will list out my environments here I
+have fluffy in other example environment that I made earlier.
+My python 3 version py 3:5 which is another environment I have and then my roots version of Python.
+You can see there's a start.
+Indicate that.
+So if you're opening up Jupiter notebook and you see something like Python Roop that's what it means
+it's roots.
+Installation of Python.
+Let's go ahead and activates my Python 3 version environments.
+Enter.
+You'll notice my Python 3 version.
+Now if I call Python inside of this virtual environments.
+Note that I get Python 3.5.
+So if you're able to actually specify that you want a different version of Python by saying Python equals
+and then whatever version number you want when you're creating that virtual environment.
+So if I do something like 1 divided by two I get 0.5 which is not the case for Python 2.
+OK so that's really all you need to know.
+As far as creating virtual environments the resource link has basically everything you would want to
+know such as changing environments cloning environments removing environments etc..
+It's pretty straightforward.
+So now that you know everything that we went over in this lecture you can go ahead and reference the
+documentation as you need.
+Again it is just an optional lecture in case you ever want to create your own virtual environments.
+I would suggest you create virtual environments just to make sure that all your libraries are the versions
+that you want them to be.
+So if you want to continue off this course maybe go ahead and create a virtual environment called my
+data science or something like that.
+
+
+#conda create --name myenv python=3.5 numpy (creates myenv virutal env with python 3.5 and with package numpy)
+#activate myenv (switch to virutal env named myenv)
+#deactivate (switch off from virutal env you are currently on)
+#conda env list (to see all virtual env in your system)
