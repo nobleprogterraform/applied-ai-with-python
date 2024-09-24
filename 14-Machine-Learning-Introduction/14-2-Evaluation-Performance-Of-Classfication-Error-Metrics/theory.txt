@@ -1,0 +1,414 @@
+Welcome everyone
+to this lecture on evaluating performance,
+particularly for classification problems.
+In the next lecture,
+we'll discuss evaluating performance for regression tasks.
+So we just learned
+that after our machine learning process is complete,
+we're going to be using performance metrics
+to evaluate how our model actually did.
+And we keep mentioning the fact
+that we train our model on the training data
+and then we're gonna use some sort of metric
+to actually see how it performed
+on either the test set or the validation set.
+So let's go ahead and discuss what that actually means.
+What classification metrics are we going to be using?
+And the key classification metrics
+we should be understanding are accuracy,
+recall, precision and F1-score.
+But first,
+we should understand the reasoning behind these metrics
+and how they will actually work in the real world.
+Typically, in any classification task,
+your model can actually really only achieve two results:
+either your model was correct in its prediction
+or your model was incorrect in its prediction.
+And all classification metrics stem from this idea.
+Now, fortunately,
+incorrect versus correct also expands the situations
+where you have multiple classes,
+such as trying to predict categories of more than two.
+For example, you have category A, B, C, D.
+You can either be correct in predicting the correct category
+or incorrect in predicting the right category.
+Now for the purpose of explaining the metrics,
+we're gonna go ahead and simplify this
+to what's known as a binary classification situation,
+binary meaning two.
+So there's only two available classes,
+either class zero or class one.
+And this idea is going to expand
+to multiple classes as well.
+But for simplification,
+let's imagine just a binary classification situation.
+So in our example,
+we're gonna attempt to predict if an image is a dog or a cat
+and we'll actually perform this task later on
+during the convolutional neural network portion
+of this course.
+Now, since it's a supervised learning problem,
+what we're gonna need to do first is fit
+or train a model on training data.
+That means we're gonna have images
+that someone's already gone ahead and labeled dog or cat.
+So we know the correct answer on these images.
+Then we're gonna test that model on the testing data.
+So we're gonna show new images
+that the model hasn't seen before,
+get the model's prediction,
+and then compare the results of the model prediction
+to the correct answer that we already know.
+So once we have the model's predictions from X_test data,
+we compare it to the true Y values, the correct labels.
+So let's actually diagram this process out.
+Let's imagine we've already trained
+our model on some training data,
+and now it's time to actually evaluate
+the model's performance.
+This is where our test dataset comes in.
+So we take a test image from what we're gonna label X_test,
+X meaning features.
+So the actual image itself is a feature
+and this is from the test set.
+And there is a corresponding correct label from y_test.
+So we have the feature or image X,
+and that's the test image,
+and we also have the correct label from y_test.
+And in this case we can see
+that this image is an image of a dog.
+So what we're gonna do is
+we're just gonna feed in the features,
+in this case, the image into our already trained model,
+and then the model is going to make some prediction.
+So the model predicts that this is a dog,
+and then what we do is we compare the prediction
+to the correct label.
+So this dog equal dog,
+and in this case, it was correct.
+However, maybe it predicted that this image was a cat,
+and in this case,
+this comparison to the correct label would be incorrect.
+And these are essentially just the only two situations.
+Either you're right or you're wrong, correct or incorrect.
+So we'll repeat this process
+for all the images in our X_test data,
+and at the end we will have a count of correct matches
+and a count of incorrect matches.
+And the key realization here that we need to make is
+that in the real world,
+not all incorrect or correct matches hold equal value.
+So let's kind of hone in on what we mean by that.
+So in the real world,
+a single metric won't tell the complete story.
+And to understand all of this,
+let's bring back those four metrics we mentioned
+and see how they're actually calculated.
+We could organize our predicted values
+compared to the real values
+in what is known as a confusion matrix.
+So we'll touch upon the confusion matrix later on,
+but first, let's talk about accuracy.
+Accuracy is one of the most common classification metrics
+and luckily, it's also the easiest to understand.
+It's just really intuitive what it's measuring.
+Accuracy and classification problems is the number
+of correct predictions made by the model,
+divided by the number of,
+or the total number of predictions.
+So again, it's the number of correct predictions
+divided by the total number of predictions,
+essentially answering the questions,
+how many predictions did you get right as a percentage?
+So for example,
+let's imagine that X_test set was 100 images
+and our model correctly predicted 80 images.
+Then we have 80 divided by 100 or 0.8 or 80% accuracy.
+And accuracy is really useful
+when the target classes are well-balanced.
+So what does that mean, well-balanced?
+Well, in our example,
+that would mean we have roughly
+the same amount of cat images
+as we have dog images throughout our data.
+So it means the actual labels themselves
+are roughly equally represented in the dataset.
+But let's imagine that we have what's known
+as an unbalanced class situation.
+In this case, accuracy is actually not a good metric to use.
+So let's do a little thought experiment.
+Let's imagine that in this test set
+we had 99 images of dogs and only 1 image of a cat.
+Now, if our model was simply a line
+that just always predicted dog no matter what image it saw,
+then we would actually get 99% accuracy
+on this particular test set
+because by just always saying dog,
+99 images are dogs and 1 image is of a cat,
+then we only missed one.
+So that's why you have to be aware
+of the downside of accuracy.
+And the downside really comes when you have
+an unbalanced class situation.
+If your classes are roughly balanced,
+then accuracy is a very nice intuitive method
+or a metric to understand.
+However, if you have an unbalanced class,
+you can see in this particular situation
+where it starts to represent a problem,
+and that's where the other metrics come into play.
+So again, in this situation,
+we'll want to understand recall and precision.
+That helps us understand how well it's performing
+on unbalanced classes.
+Recall is the ability of a model
+to find all the relevant cases within a dataset.
+And the precise definition of recall
+is the number of what's known as true positives.
+And we'll kind of hone in on that later
+when we see the confusion matrix,
+but it's the number of true positives
+divided by the number of true positives,
+plus the number of false negatives.
+And the precision is the ability of a classification model
+to identify only the relevant data points
+where precision is defined as the number of true positives
+divided by the number of true positives,
+plus the number of false positives.
+Now, often,
+you have a trade-off between recall and precision.
+While recall expresses the ability
+to find all the relevant instances in a dataset,
+precision expresses the proportion
+of the data points our model says was relevant
+that actually were relevant.
+And then F1-score is essentially
+a combination of these two.
+In cases where we want to find an optimal blend
+of precision and recall,
+we can combine the two metrics
+using what is known as the F1-score.
+And the F1-score is the harmonic mean
+of precision and recall,
+taking both metrics into account in the following equation.
+So this isn't just taking the average of recall, precision.
+It's taking the harmonic mean of them.
+And so here we have the formula for F1-score
+or F1-score is equal to two, times precision,
+times recall in the numerator,
+and then divided by precision,
+plus recall in the denominator.
+So the reason we use the harmonic mean
+instead of just a simple mean or simple average is
+because it's gonna punish extreme values.
+For example,
+if you created a classifier that had a precision of one,
+meaning essentially perfect precision,
+and a recall of zero, essentially the worst recall possible,
+if you were just to take the simple average of this,
+then it would be 0.5, but the F1-score,
+because it's taking a harmonic mean,
+we have precision times recall there at the top,
+which means you'd get zero times one at the top
+and you get an F1-score of zero.
+So this is really nice
+because it lets you punish extreme differences
+between the precision and recall.
+So it gives you kind of a fair assessment
+of that trade-off between precision and recall.
+Now we can also view all correct classified
+versus incorrectly classified images
+in the form of a confusion matrix.
+So confusion matrix looks something like this.
+We have the underlying true conditions,
+so that's the true correct label.
+And we can think of condition as positive or negative,
+such as actually being a dog or not being a dog,
+or oftentimes is used in a medical diagnosis,
+such as having presence of a disease
+versus not having presence of a disease.
+And then we have the model's predicted condition.
+So prediction positive or prediction negative.
+And I think when it comes to confusion matrices,
+it's often easiest to first get an intuition
+if you think of this as a diagnostic test
+for having some sort of disease present in a person
+after maybe you take a blood sample
+and run it through your model.
+So for example,
+a true positive would be
+someone actually having that disease
+and your model correctly predicting that they have it.
+A true negative would be someone not having the disease
+and your model predicting correctly
+that they do not have the disease.
+So you have true positives and true negatives
+and those are both correct predictions.
+And then we have essentially these two types
+of incorrect predictions:
+a false positive and a false negative.
+A false positive would be
+if the person doesn't have the disease
+and you predict that they do have it.
+That's a false positive because you're falsely saying
+that they're positive for this disease or this condition.
+A false negative is essentially the opposite of that,
+where this person does have the disease present
+and then you report back using your model on your test
+that it's actually negative,
+they don't actually have this disease.
+And these are also sometimes called in statistics
+a type I error and a type II error.
+And then off of these,
+essentially true positive true negatives,
+false negatives and false positives results,
+there's a lot of other metrics you can calculate.
+So we can see some of them here,
+such as on the bottom left corner,
+we can see the actual calculation for accuracy.
+It's the sum of true positives plus true negatives,
+essentially the sum of what you got correct
+over the total population.
+And then there's a bunch of other ones,
+like positive likelihood ratio, false positive rate,
+true positive rate, prevalence
+false discovery rate, et cetera.
+Now, the main point to remember here is
+that the confusion matrix and the various calculated metrics
+is essentially they're all fundamentally ways
+of comparing the predicted value versus the true values.
+And what constitutes good metrics
+actually really depends on the specific situation.
+A really common question I get from students is,
+"Hey, is this a good enough accuracy?"
+Well, that really depends on your situation
+and the context of the situation.
+Now, if you're still confused on the confusion matrix,
+it's no problem, check out the Wikipedia page for it.
+It has a really good diagram
+with all the formulas for all the metrics.
+And throughout the training in this course,
+we're usually just gonna print out metrics,
+such as printing out basic accuracy.
+Now, before we finish off this lecture,
+I wanna go back to that initial question I mentioned
+that students ask me all the time,
+which is this idea of "What is a good enough accuracy?"
+And as always,
+this really depends on the context
+of the situation you're running your model in.
+There's no single number I can give
+to say something like 90% accuracy
+is good enough for every situation.
+We already saw the issue with unbalanced classes,
+but there's also not really a good remark I can give
+for what is a good enough precision or recall.
+And we have to think of the context of the situation.
+So let's think back on maybe that model that is diagnostic
+for predicting the presence of a disease.
+So if we created a model
+to predict the presence of a disease,
+first thing we wanna think about is,
+are we gonna have balanced classes or unbalanced classes?
+So is the disease presence well balanced
+in the general population?
+And in pretty much most cases, it's probably not.
+There's probably not a disease that's gonna happen
+where about half the population is affected
+and half the population is not affected.
+So we can already tell we're gonna have
+an unbalanced class situation,
+which means we're gonna have a precision/recall trade-off.
+So we should also keep in mind that often these models
+are used as quick diagnostic tests
+to have before having a more invasive test.
+For example, for prostate cancer models,
+it's really common to just do a simple urine test
+before getting a biopsy because it's much easier
+to just get your urine tested
+than going through a full biopsy on the prostate.
+So we also need to consider then what is at stake.
+If it's prostate cancer, the stakes are actually quite high.
+So as we mentioned,
+we often have that precision/recall trade-off,
+which means we essentially need to decide
+if the model should focus
+on fixing false positives versus false negatives.
+So at the cost of decreasing false negatives,
+most likely we increase false positives and vice versa.
+And in disease diagnosis,
+it's probably better
+to try to minimize the number of false negatives
+at the cost of increasing the number of false positives.
+So we go in the direction of these false positives,
+and why do we actually wanna do that?
+Well, we wanna make sure we correctly classify
+as many cases of the disease as possible.
+So at the cost of increasing false positives,
+we try our best to decrease false negatives
+in this context of disease diagnosis.
+And why would we actually wanna do that?
+Well, we wanna make sure that anyone that actually has
+some sort of presence of this disease
+or in this case of this example, prostate cancer,
+if we're doing that urine test,
+we wanna make sure that all those people
+that have the presence of the disease
+will actually go through to the next step
+that is maybe a more invasive test, like a biopsy.
+And remember,
+this kind of usually comes at a cost
+of increasing those false positives.
+So our models aren't gonna be perfect.
+And eventually what's gonna happen is
+someone who doesn't have the disease,
+when we do our simple urine test
+or whatever our machine learning model is,
+it's gonna predict back that, Hey, I'm sorry,
+but you have the positive presence of this disease,
+and it'll be an error because it'll be a false positive.
+However, then when they get the more invasive test,
+then they'll realize, oh, sorry, it was a false positive.
+You're actually okay. You don't have this disease.
+And that comes because we're trying
+to minimize the false negatives,
+What we really don't want
+when it comes as something as important
+as having cancer, having a disease,
+we really don't want to turn someone away
+who actually has a disease
+and tell 'em they don't have the disease.
+So that would be a false negative.
+When it comes to disease diagnosis,
+that's something we really want to minimize.
+We wanna minimize those false negatives
+so we don't accidentally miss someone right off the bat
+with our diagnostic tool and tell 'em,
+"Oh, you don't have the disease" or "you don't have cancer"
+when they actually do have it.
+So we can see,
+for something as important as disease diagnosis, really,
+minimizing those false negatives becomes really important.
+And pretty much all of this is to say
+machine learning is not gonna be performed in a vacuum
+and these performance metrics don't have some sort
+of universal truth that is true across all problems.
+But machine learning is, instead,
+it's a really collaborative process
+where we should always be consulting with experts
+in the domain.
+For example, in this case of disease diagnosis,
+we should probably be talking to medical doctors
+as far as what are acceptable standards
+for false negatives versus false positives,
+what is the general presence
+of this disease in the general population, et cetera.
+And this is going to change depending
+on the context of your situation.
+So always keep that in mind.
+There's not gonna be an easy answer for me to say,
+is this a good enough accuracy, precision, or recall,
+because it all depends
+on the context and the domain of the situation, okay.
+So we just talked about how we can
+evaluate classification models.

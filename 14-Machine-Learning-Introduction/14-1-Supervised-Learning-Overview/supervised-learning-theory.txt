@@ -1,0 +1,192 @@
+Hi everyone
+In this lecture we will understand supervised learning.
+Supervised learning algorithms are trained using
+labeled examples, and that's a key word label,
+such as an input where desired output is known.
+That means within your dataset, you're gonna
+have some historical features with historical labels.
+So you already have that information
+such as a segment of text, could have a category label.
+So you take a bunch of previous emails
+and someone has already gone by
+and classified them using the correct label.
+So they read the email
+and classified it as spam versus legitimate.
+Or we have a bunch of movie reviews
+and someone has already gone and labeled movie reviews
+either positive to the movie or negative to the movie.
+And then the idea would be for future text information
+such as a future email using the historical label data,
+the network or machine learning algorithm could learn
+off the historical data in order to predict for new data
+whether it belongs in the spam category
+or legitimate category, or in the positive category
+or negative category for these movie reviews.
+So the way this works is for neural networks,
+the network's gonna receive a set of input data
+along with the corresponding correct outputs
+and then the algorithm or network will learn
+by comparing its actual output
+with correct outputs to find errors,
+and then it'll modify the model accordingly,
+such as adjusting the weights
+and bias values in the network.
+And don't worry about those two key terms.
+We'll discuss those in a lot more detail when we talk
+about neural network theory.
+So supervised learning is used in applications
+where historical data predicts likely future events
+and the machine learning process
+for supervised learning looks like this.
+So let's go ahead and go through this step by step.
+So the first thing we need to do is actually get data.
+And it depends on what domain you're working in
+where this data actually comes from.
+This can come from your customers, or it can come
+from collecting things into a database online
+or maybe it's physical data
+and it comes from sensors, et cetera.
+So at some point the data has to actually be acquired.
+Once we actually acquire the data,
+then we need to clean and format the data
+so that our neural network can actually process it.
+And often we'll do this using a library called Pandas.
+Then we split the data into training data and test data
+and we'll talk about this particular step
+in a little more detail towards the end of this lecture.
+But what we do here is we take some portion of our data
+maybe like 30% to be test data, and then the larger majority
+of the data, like 70% to be our training data.
+And what we're gonna do here is we're gonna use
+that specific training set on our network
+or model in order to fit a model to that training data.
+Then we wanna know how well our model actually performed.
+So we then run that test data
+through the model and compare the model's prediction
+to the actual correct label that the test data had.
+Because remember, we actually know the correct label
+for that test data.
+So you can run that test data features through the model,
+get our model's predictions,
+and compare it to the right answer.
+And then we can evaluate the model.
+And then maybe you want to go back based
+off that performance and adjust the model parameters,
+maybe add more layers or more neurons to try to
+get a better fit onto that test data.
+And once we're satisfied with this,
+we can then deploy the model to the real world.
+Now, something to note here is what we just
+showed was technically a simplified approach
+to supervised learning, and it does contain a key issue
+which we kind of touched upon during that test train split.
+And the question arises, is it fair to use that single split
+of the data into one test set and one training set
+to actually evaluate your model's performance?
+So when you actually test your model on the test data
+you'll get some sort
+of performance metric for regression tasks.
+It could be something
+like a root mean squared error.
+For a classification task,
+it could be something like the accuracy
+but is it actually fair to use the accuracy
+you get off that test data
+as your model's final performance metric since technically
+after all you were given the chance to
+update the model parameters again and again
+after evaluating your results on that test set?
+So how do we fix this conundrum?
+Well, to fix this issue, the data,
+especially in neural networks and deep learning,
+it's often split actually into three sets.
+And we have training data, validation data
+and then test data.
+So we kind of introduce this in-between step
+of this validation.
+And so what we end up doing is we have these three sets
+and we have the training data just as we did before
+and this is used to train the model parameters.
+So the model gets to look at the features,
+look at the correct output,
+and then fit to this training data.
+And then the next step is our validation data
+which was kind of our test data from before.
+And so what we do with this validation data is
+after training on the training data,
+we check the performance on the validation data
+and maybe based off that performance,
+we go back and adjust our models,
+maybe adding more neurons or adding more layers,
+changing the actual architecture of the network, et cetera.
+And then you kinda repeat that process over
+and over again until you're satisfied
+with your model's performance on the validation data.
+And now it comes time to evaluate the true performance
+of your model.
+So what do we do?
+Well, that's why we have that third split
+of test data that the model has never seen before.
+And what you use that final test data set is to
+actually get some final performance metric.
+Now, the key thing to note here is
+that once you run the model through the test data,
+that's gonna be the performance metric that you
+expect your model to actually perform
+with in the real world.
+Since you're not gonna go back
+and adjust your model's weights
+or parameters or anything else, once you actually go
+onto that final test dataset, you're technically
+not allowed to go back and adjust the model
+in order to try to refine your performance
+on that final test dataset.
+So you can think of it this way.
+You train on the training data to actually fit your model.
+Then you use the validation data to see how
+your model performs and unseen data
+and then go back and adjust your hyper parameters.
+But when it comes time to actually kind of report
+to your boss, how well will this model do in the real world?
+That's where your final test dataset comes into play.
+And the test dataset
+once you actually pass it through a test data
+and you get that performance metric, that's it.
+You don't really get to go back
+and adjust the hyper parameters otherwise
+you're kind of cheating yourself again
+on understanding the model's real performance
+on truly unseen data.
+So what this means is after we see that result
+on the final test set, we don't get to go back
+and adjust any of those model parameters.
+This final measure is what we label the true performance
+of the model to be on unseen data.
+Now in this course in general, we're gonna simplify our data
+by just doing that single train test split.
+While technically we could be doing another split to
+get both a validation and a test set for the kind
+of problems and exercises we're doing in this course.
+Since we're not really deploying a lot
+of these models to the real world,
+it's not a huge deal that we essentially just
+have a training set and a test set
+and we skip the sort of like in-between validation set.
+So we'll simply train and then evaluate on a test set
+and we'll leave the option
+to the students to go back and adjust the hyper parameters.
+And then after going through this entire course
+you're gonna be able to easily perform another
+split to get three data sets if you desire.
+So you'll be able to easily create a training set,
+a test set, and a validation set if that's what you want.
+But just wanna tell you, in this course,
+we'll keep things simple and just train
+on a training set and then evaluate on a test set.
+And we won't really go back and adjust hyper parameters.
+We'll kind of treat that test as the final.
+And again, you can always go back and add in more neurons
+or more layers or more hyper parameters to your network.
+That'll be really easy to do
+and we'll kinda leave that up to you
+as a student to decide if you wanna continue with that.
