@@ -1,0 +1,116 @@
+ In this next section, we're gonna talk
+about the challenges of dealing with real world data
+and some of the quirks you might run into.
+So let's start by talking about the Bias/Variance tradeoff,
+which is kind of a more principled way
+of talking about the different ways
+you might overfit and underfit data
+and how it all interrelates with each other.
+Let's take a look.
+So one of the basic challenges that we face when dealing
+with real world data is overfitting
+versus underfitting your regressions
+to that data or your models or your predictions.
+And when we talk about underfitting and overfitting,
+we can often talk about that in the context
+of bias and variance and the Bias/Variance tradeoffs.
+So let's talk about what that means.
+So conceptually, bias and variance are pretty simple.
+Bias is just how far off you are from the correct values.
+So how good are your predictions overall
+in predicting the right overall value?
+If you take the mean of all your predictions,
+are they more or less at the right spot?
+Or are your errors all consistently skewed
+in one direction or another?
+If so, then your predictions are biased
+in a certain direction.
+Variance is just a measure of how spread out,
+how scattered your predictions are.
+So if your predictions are all over the place,
+then that's high variance,
+but if they're very tightly focused
+on what the correct values are or even an incorrect value
+in the case of high bias, then your variance is small.
+So let's look at these examples here.
+Let's imagine that this start board represents
+a bunch of predictions we're making where the real value
+we're trying to predict is in the center of the bullseye.
+So starting in the upper left hand corner, you can see
+that our points are all scattered about the center.
+So overall, you know, the mean error comes out to be,
+you know, pretty close to reality.
+Our bias is actually very low because our predictions
+are all around the same correct point.
+However, we have very high variance
+because these points are scattered about all over the place.
+So this is an example of low bias and high variance.
+If we move on to this one, to the upper right corner,
+we see here that our points are all consistently skewed
+from where they should be to the northwest here.
+So this is an example of high bias in our predictions,
+where they're consistently off by a certain amount.
+And we have low variance
+because they're all clustered tightly
+around this wrong spot, but at least they're close together.
+So we're being consistent in our predictions,
+and that's low variance, but the bias is high.
+So again, this is high bias, low variance.
+This example in the lower left corner,
+you can see that our predictions are scattered
+around the wrong mean point.
+So we have high bias,
+everything's skewed to someplace where it shouldn't be,
+but our variance is also high.
+So this is kind of the worst of both worlds here.
+We have high bias and high variance in this example.
+And finally, in a wonderful perfect world,
+you would have an example like the lower right image here,
+where we have low bias, where everything's centered
+around where it should be, and low variance,
+where things are all clustered pretty tightly
+around where they should be.
+So in a perfect world, that's what you end up with.
+But in reality, you often need to choose
+between one and the other.
+So let's take a look at this example.
+A little bit of a different way of thinking
+of bias and variance here.
+So here we have a straight line, and you can think of that
+as being having a very low variance
+relative to these observations.
+Okay, so there's not a lot of variance in this line,
+low variance, but the bias, you know,
+the error from each individual point is actually high.
+Okay, now contrast that to this overfitted data here,
+where we've kind of gone out of our way
+to fit these observations.
+This line has high variance but low bias
+because each individual point is pretty close
+to where it should be.
+So this is an example
+of where we trade traded off variance for bias.
+Now, at the end of the day,
+you're not out to just reduce bias or just reduce variance.
+You want to reduce error, right?
+That's what really matters.
+And it turns out you can express error
+as a function of bias and variance.
+So error is equal to bias squared plus variance.
+So these things both contribute to the overall error,
+with bias actually contributing more.
+But keep in mind, it's error you really want to minimize,
+not the bias or the variance specifically.
+And overly complex model will probably end up
+having a high variance and low bias,
+whereas a too simple model
+will have low variance and high bias,
+but they could both end up having similar error terms
+at the end of the day.
+So you just have to find the right happy medium
+of these two things when you're trying to fit your data.
+And we'll talk about some more principled ways
+of actually avoiding overfitting
+in our forthcoming lectures.
+But it's just the concept
+of bias and variance that I wanna get across

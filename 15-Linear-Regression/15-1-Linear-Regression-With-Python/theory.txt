@@ -1,0 +1,62 @@
+Hello everyone and welcome to an introduction to linear regression and this lecture we're going to get
+a light theoretical background history behind the idea of linear regression before we actually tackle
+the concept with Python and the sikat learn library.
+If you want a deeper mathematical understanding of linear regression.
+You can go ahead and check out chapters 2 and 3 of an introduction to statistical learning.
+Let's discuss the history behind literary aggression.
+This entire idea all started back in the 1800s a man named Francis gult in Colten was studying the relationship
+between parents and their children and in particular he investigated the relationship between the heights
+of fathers and the heights of their sons.
+What he discovered was that a man's son tended to be roughly as tall as his father.
+However Galton's breakthrough was at the son's high tended to be closer to the overall average height
+of all people.
+Let's go ahead and take an example of this.
+Shaquille O'Neal was a famous NBA player is very tall.
+He's 7 foot 1 inch or 2.2 meters tall.
+If Shaq as he's known has a son chances are he'll be pretty tall too.
+However Czech is such an anomaly in height that there is also a very good chance that his son is not
+going to be as tall as Shaq.
+And it turns out this is the case.
+Shaquille O'Neal son is pretty tall.
+He's 6 foot seven inches but he's not nearly as tall as his dad who was 7 foot 1 Gault him calls this
+phenomenon regression as in a fathers sons Height's tends to regress or drift towards the mean or average
+height of everyone else.
+Let's go ahead and begin to plot out the sort of example let's cut to the regression with only two data
+points which is the simplest possible example.
+Here we have two data points.
+Sequels to and white was for as one data point and the X sequel's 5 and y equals 10 is another data
+point.
+These two little black dots all we're trying to do when we calculate our regression line is draw a line
+that's as close to every dot as possible for classic linear regression or the least squares method.
+You only measure the closeness in the up and down their action.
+Here we have a perfectly fitted line because we only had two points.
+Now wouldn't it be great if we could apply this same concept to grasp with more than just two data points
+.
+By doing this we could take multiple men and their sons heights and do things like tell Amanda how tall
+we expect the son to be before he even has a son.
+And this is the idea behind supervised learning.
+We're going to have a bunch of labeled data points create a model.
+In this case in theory aggression and try to take unlabeled data such as a father's high and spit back
+out labeled data our prediction of the sun's height.
+Our goal if linear regression is to minimize the vertical distance between all the data points in our
+line.
+So in determining the best line we are attempting to minimize the distance between all the points and
+distance to our line.
+There are lots of actually different ways to minimize this.
+The sum of squares error some of absolute errors etc..
+But all of these methods have a general goal of minimizing the distance between your line and the rest
+of the data points.
+For example one of the most popular methods that we just described is the least squares method.
+Here we have a couple of blue data points along an x and y axes and we want to fit a linear regression
+line.
+And the question is how do we decide which line is the best fitting one we can go ahead and use the
+least squares method which we discussed earlier.
+This method is fitted by minimizing the sum of the squares of the residuals the residuals for an observation
+is the difference between the observation the y value and the fitted line.
+In this image the residuals are marked by the red line.
+The difference between the true data point in blue and your fitted model line.
+The black Bagenal line.
+Right in the next lecture.
+We're going to use sikat learned in Python to create a linear regression model.
+Then you'll have your own portfolio project exercise and afterwards we'll go over the solutions to that
+project.

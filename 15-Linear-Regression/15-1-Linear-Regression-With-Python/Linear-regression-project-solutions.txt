@@ -1,0 +1,239 @@
+Hello everyone and welcome to the linear regression project exercise solutions lecture and this lecture
+will begin to go through the solutions for the linear regression project.
+Let's go ahead and get started by jumping to a Jupiter notebook.
+All right here I am at the notebook.
+Let's go ahead and get started.
+First thing we need to do is all our imports are going to go out and import pandas in some pie
+and then I will also import my visualization libraries that plot live up high plots as TLT and seaborne
+as asinus.
+And then since amusin a Jupiter notebook I also want to make sure to set up plot live in line and as
+instructions said will go ahead and import sikat learn as we need it.
+Then we want to get the data since we're going to be working to the e-commerce customers see every file
+from the company.
+It has those four columns so let's go ahead and read it in as a data frame called customers and say
+PD reads cxxviii and then we can start typing what we want and if we just click tab it will autocomplete
+for us and then let's go ahead and check out the head of the data frame by saying customers dot head
+.
+And hopefully by now you're pretty used to this sort of interaction for data set.
+We notice here we have email address.
+Avatar can scroll over to the right to see the numerical columns such as average session length time
+on the app time on the Web site link for membership and yearly amount spent.
+They can also check out the described method to get some statistical information off of the numerical
+columns and we can do info to just get some basic information such as the object types.
+How many entries there are how many columns.
+So it looks like we have 500 rows of eight columns.
+Now let's go ahead and begin to do some exploratory data analysis and for the rest of the exercise.
+Keep in mind we're only going to be using the numerical data of the CSP file.
+First thing you want to do is use seaborne to create a joint plot to compare time on the Web site and
+yearly amount spent.
+Columns and this is correlation shown makes sense.
+Let's go ahead and do this.
+The plot should look something like this story if you weren't able to get the exact coloring.
+All we can say esus joints plots and we want to compare time on a Web site in yearly amounts Spens Let's
+go and specify that our data is going to be the customer's data frame and then X is going to be time
+on Web site and y is going to be yearly amount spins
+and there it is.
+As far as trying to interpret the sort of scatterplot there isn't there doesn't appear to be a clear
+trend between time on a Web site and yearly amounts spent just by looking at this visually.
+We'll go ahead and take a look at this later on when we actually start building our model.
+Let's go ahead and move on to doing the same all of the time on app column instead.
+So basically you want to as shown here say time on at Busiek's and yearly amounts spent on why we should
+see a little more correlation here between time on app and yearly amounts spent we'll do this by saying
+joint plot.
+Again you say your data equals customer and it doesn't really matter the order of these arguments as
+long as you specify which parameters or arguments are actually passing in.
+So on to say time on app and yearly amount spent.
+I remember the speccing needs to be and capitalization all need to be exactly the same as the column
+name.
+So for instance customers wasn't correct and I need to say data equals customers.
+OK and here we have the same plot.
+It looks like there begins to be some sort of correlation between increased time on app increasing yearly
+amount spent expenditure.
+Let's go ahead and use joint plot to create a to the hex plot comparing time on app and length of membership
+.
+We can do this again with joint's plot specify x is equal to time on app Y is equal to the length of
+membership column.
+And then we'll specify kind as equal to hex in order to create a to the Hexton plot.
+And finally we want to say data is equal to customers.
+Run that.
+And now we see the hex plot great let's go and explore these type of relationships across the entire
+data set using peer plot to recreate this plot flow.
+And don't worry if you don't get these exact same colors you can just say essence or plot and then passen
+your customers data frame.
+Run it.
+It may take a little bit of time depending on your computer since it's a larger data set.
+You should get something that looks like this and based off this plot what looks to be the most correlated
+feature of yearly amount spent.
+So we can go ahead and check out the yearly amount spent column which depending on whether you're looking
+on the x or y axis is right here at the very bottom.
+So yearly amounts spent.
+We just look at this visually it looks like right here is the highest correlation which looks like it's
+more of a straight line.
+And it's the length of membership.
+So the answer to this question just based off of this visually is length of membership.
+Now we want to do is create a linear model plot using seabirds L.M. plot of the yearly amount spent
+versus length of membership to actually try to plot out that relationship in a little more detail and
+we can go ahead and say s n s l and plot where we want X to be the length of membership
+Y is equal to yearly amount Spens and data is equal to customers.
+We'll go ahead and run this and we've got the exact same plot out.
+Now notice here there seems to be a good linear fit on this data and you can notice that because there's
+very little error as far as these error bars go.
+So already we know a pretty good idea that the longer you stay a member the higher yearly amount expenditure
+you're going to have which kind of makes sense.
+Now let's go ahead and create our training and testing data.
+We'll go ahead and start this by setting a variable x equal to numerical features of the customers and
+a variable y equal to the yearly amount Spens column.
+Let's go ahead and see our column names by saying customers.
+Columns and it's going to make it easier than having to type in a bunch of information so I can go ahead
+and say why is customers and what we're trying to predict is the yearly amount Spence and I would just
+go and tap out a complete that and then for X what we want are their numerical columns and that's going
+to be equal to average session length the time on the app time on the Web site.
+The length of the membership.
+Let's go ahead and put that in.
+So customers and then pasan a list of the column names then go ahead and put this on one line.
+We want to you can also separate into multiple lines as well.
+But here we go and that should give us a numerical columns.
+Okay great.
+So we have our y data in our XT data member why is what we're trying to predict and X are the numerical
+features for this.
+We're going to go ahead and do next is used cross-validation train split from S-K learn to split the
+data into a training and testing set and we'll set the test size to 0.3 and a random state equal to
+101.
+OK you're going to be doing this all the time during the machine learning section so eventually you'll
+just have this memorized but we're going to say from S-K learn cross-validation and you can do tab to
+get these options in import test train splits.
+And actually it should be trained to split before I run this train.
+Test it and you can do tab which will let you know if you're doing the correct thing.
+And then we'll go ahead and say well I like to do is train test split do shift tab see the full documentation
+string.
+Scroll down until you come to the examples and then you'll see an example here.
+Go ahead and just copy and paste this.
+And this kind of saves you a lot of typing.
+And now you want to do a set the size to 0.3 and the random state to 101.
+You don't have to set the random set to 1 to 1.
+But if you do want to have your results match mine and the solutions book you should set the random
+state otherwise in normal circumstances you can just leave it with the default random state and not
+add that parameter.
+Let's go ahead and run this.
+I make sure everything worked out correctly.
+Great.
+Now it's time to train our model on our training data.
+We're going to go ahead and import linear regression from S-K learned that linear model.
+So what we want to do is say from S-K learn linear model and you can do autocomplete import linear regression
+and then we're going to create an instance of a linear regression model named L-M.
+Hopefully this feels really familiar given the lecture series.
+Well go ahead and create that object.
+And then we want to train slash fit L.M. all the training data and we do this by saying L-M thought
+fit.
+And if you do shift tab here I'll tell you what order you want X and then Y.
+And since we're just dealing with the training data we want X train white train we'll go ahead and fit
+that.
+And now we have our fitted trained linear regression model.
+We are going to do now is print out the coefficients of the model.
+We can do that by saying L-M and start typing coefficients and eventually at c o f underscore and this
+returns the coefficients as an array.
+All right let's go ahead to move on to predicting from the test data and now that we have a fit model
+what we can do is evaluate its performance by predicting off the test values.
+So we had to use L-M predict to predict off the X test set and we can do.
+Elum predict passen X underscore test and set the results equal to an array called predictions.
+And then we want to create a scatterplot of the real test values versus the predicted values.
+So we can go and say peel t scatter pass in Y test and then passen predictions and we can say Piazzi
+we'll go ahead and do some labels here will say X label number x is our why test the true values and
+PLDT why label is the predicted values and if we go ahead and run this notice that we're that our model
+is actually doing quite well.
+If this was an absolutely perfect straight line of all the dots on top of each other it would mean we
+had a perfect model on the test data.
+But for now we can see that there is a little bit of noise in error but it's honestly pretty good considering
+why test versus predictive values and that we were just using for numerical columns.
+OK let's go ahead and actually evaluate this model not just visually but through some mathematics so
+let's evaluate our model performance by calculating the residual sum of squares and they explained variance
+score which is r squared.
+Remember from the lecture.
+We can do all of this just by calling from S-K learn Webbs import metrics we can start by saying Prince
+MATV or they mean absolute air in I'm going to go ahead and then call metrics I mean in this case absolute
+error and we just passen the Y test the true values versus the production values.
+Let's go to just copy and paste this answer are going to be using it quite a bit the same cell I can
+say print MSCE
+metrics.
+And in this case we want mean squared error and I was going to copy and paste.
+Why test predictions.
+And then we want our MSCE
+and we want metrics dot.
+In this case we want the loops want the mean square error again MASTERSON.
+But remember since this is the root mean squared error we're going to go ahead and say and p q r t and
+take the square root of that score to make sure this runs correctly.
+Great and looks like we got matching results.
+Now you'll notice there was another little issue here that said Andy explain variance score.
+Now this wasn't actually referred to in the Bouldon instructions it was kind of a bonus for you to discover
+this on your own.
+But what you can do is say metrics
+dots.
+And if he starts typing in X and do tap autocomplete you also get explain the variance score.
+And this is the R-squared value for a regression fit and you can passen again why test and their predictions
+and see how it ran.
+So go out and check that out.
+We get 0.19.
+So if you're not familiar of our square that's basically a measurement of how much variance your model
+explains and we explain about ninety nine percent of the variance you can see we have a very good fit
+model especially on the test data.
+Now let's discuss residuals.
+So we should have gotten a very good model and a good fit.
+Like we just saw.
+We're going to quickly explore the residuals to make sure everything was OK for data.
+We're going to plot a histogram of the residuals and make sure it looks normally distributed and you
+can use either appeal t that hissed or Seaborn this plot.
+We can go in and say just doing Seaborn S and S thought this plot and we want to say why test minus
+the predictions whip's X that and we'll go in and specify bin's to be a little bit of a larger number
+and we get a distribution.
+So it looks pretty normal given what we have been working with and we already know we have a very good
+fitting model.
+So we shouldn't be concerned about the residuals.
+And as far as its conclusion we still want to figure out the answer to the original question which was
+do we focus our efforts more on mobile app or website development.
+Or maybe that doesn't even really matter in membership time is what is really important.
+And we're going to do is see if we can interpret the coefficients at all to get an idea.
+We're going to try to recreate the state of frame below.
+We did this in the lecture or similar data framing the lecture.
+It's going to do that we passen the coefficients as our data and we say X stock columns as the names
+we'll call this CDF and let's say See the thought columns and we can actually pass this in while we're
+creating this all say columns is equal to or say code if let's go ahead and check CVF and we get the
+same data frame.
+All right.
+Now the question is how do we interpret these coefficients.
+And there's a little markdown cell in case you want to type here.
+But you don't have to you can just think about this in your mind.
+Basically the way to interpret these coefficients is one at a time.
+So for instance average session length if you hold all the other features fixed a one unit increase
+in the average session length is associated with an increase of around 26 dollars more expense.
+And similarly in a unit increase on the time on the app is associated with a increase of $38 Spens per
+year and time on a Web site is actually just shown to be a 19 cents increase which isn't so great and
+length of membership.
+By far the strongest feature here.
+If you hold all other features fixed a one year increase in length of membership is associate of an
+increase of around 61 dollars.
+So now the question is do you think the company should focus more of their mobile app or on the Web
+site.
+Given this information now this is actually tricky because there's two ways to think about this.
+If you look at your coefficients and the data in our model we could develop the Web site to catch up
+to the mobile app.
+So one way of thinking about this is oh well the Web site needs the most work and that's where we should
+focus more of our efforts.
+Or you can think of it another way which is you should develop the app more since it is working already
+much better.
+And this sort of answer really depends on a number of factors going on at this particular company or
+wherever the state is actually coming from and you're going to want to explore the length of the relationship
+between length of membership and the app or the Web site for coming to a conclusion.
+And this is truly where the role of the data scientist starts to blend in with the role of someone with
+a little more business acumen and more familiar with the management.
+How much is going to cost to improve the app versus the web site etc..
+So all these choices are going to have costs associated with them.
+And without that information it's a little hard to tell.
+So what you can do is report and show this information and display it in an informative manner but you're
+going to need more information on the cost of the decisions to actually choose a correct focus that
+at least now we have a fully informed background to make that decision.
+All right.
+I hope you enjoyed the project exercise.
+Hopefully if you need any review you can check out either the solutions notebook or review the lecture
+what kind of lines up to the linear regression project.
+Again this data was not real it was artificially created that as we move along now throughout the machine
+learning section we're going to begin to focus more on real data sets from real world problems.
