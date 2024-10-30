@@ -4,13 +4,10 @@
 Hello everyone and welcome to the machine learning of Python lecture. Now that we've gotten an introduction to machine learning, in this lecture we're going to discuss how we're going to be using Python and the scikit-learn package to perform machine learning with Python.
 
 ## Overview of Scikit-learn
-Like I mentioned, we're going to be using the scikit-learn package. It's the most popular machine learning package for Python and it has a lot of algorithms already built into it. You'll need to install it at your command line or terminal using `conda install scikit-learn` if you have an Anaconda distribution or `pip install scikit-learn` if you have another distribution in Python.
+Like I mentioned, we're going to be using the scikit-learn package. It's the most popular machine learning package for Python and it has a lot of algorithms already built into it.
 
 ## Basic Structure of Scikit-learn
 Let's talk about the basic structure of how to use scikit-learn first. A quick review of the machine learning process: the machine learning process starts off with your data. Somehow you need to acquire data, and then the next step usually is to clean that data and format it so that the machine learning model can accept that. Before you actually give it to the machine learning model, however, you're going to split that cleaned data into a test set and a training set. You train your model on the training set and then in the next step you test your model on the test set, iterating your model and tuning the parameters until it's ready to deploy.
-
-## Example of Scikit-learn Process
-Now let's go over an example of the process to use scikit-learn. Now don't worry about memorizing any of this. We're going to get plenty of practice and review all of this when we actually start coding in subsequent lectures. This lecture is just the overview of the scikit-learn process. Don't worry about memorizing all the steps; you're going to see these steps over and over and we'll walk you through each of these steps when we actually code out the algorithms.
 
 ## Estimator Objects
 Every algorithm in scikit-learn is exposed via an estimator object. First, you'll import the model, and the general form of this is to say `from sklearn.<family> import <model>`. For a specific example, let's say we want to perform linear regression, which is going to be the first machine learning algorithm we learn about. We'll go ahead and say `from sklearn.linear_model import LinearRegression`, where `linear_model` is the family of models and `LinearRegression` is the estimator object—that's the model itself.

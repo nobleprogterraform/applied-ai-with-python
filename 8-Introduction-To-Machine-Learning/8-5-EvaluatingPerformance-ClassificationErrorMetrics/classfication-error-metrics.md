@@ -1,10 +1,8 @@
-# Lecture Transcript
 
-## Welcome and Introduction
-Welcome everyone to this lecture on evaluating performance, particularly for classification problems. In the next lecture, we'll discuss evaluating performance for regression tasks.
 
 ## Importance of Performance Metrics
-So we just learned that after our machine learning process is complete, we're going to be using performance metrics to evaluate how our model actually did. And we keep mentioning the fact that we train our model on the training data and then we're gonna use some sort of metric to actually see how it performed on either the test set or the validation set. So let's go ahead and discuss what that actually means.
+So we just learned that after our machine learning process is complete, we're going to be using performance metrics to evaluate how our model actually did. And we keep mentioning the fact that we train our model on the training data and then we're gonna use some sort of metric to actually see how it performed on either the test set.
+So let's go ahead and discuss what that actually means.
 
 ## Key Classification Metrics
 What classification metrics are we going to be using? And the key classification metrics we should be understanding are accuracy, recall, precision, and F1-score. But first, we should understand the reasoning behind these metrics and how they will actually work in the real world.

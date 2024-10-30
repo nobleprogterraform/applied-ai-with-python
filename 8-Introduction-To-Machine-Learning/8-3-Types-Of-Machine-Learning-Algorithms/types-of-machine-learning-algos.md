@@ -3,7 +3,7 @@ Sure! Here’s the transcript separated into distinct sections:
 ---
 
 ### 1. Introduction
-- Welcome back everyone to this lecture where we're going to discover the types of machine learning discussed in future lectures and sections of the course.
+ we're going to discover the types of machine learning discussed in future lectures and sections of the course.
 - So as we've mentioned before, there's two main types of machine learning we're covering in upcoming sections, and those are supervised learning algorithms and unsupervised learning algorithms.
 - Keep in mind, we're gonna have future lectures that take much deeper dives into each of these different types of machine learning segments, supervised versus unsupervised.
 

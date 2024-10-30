@@ -3,7 +3,7 @@ Sure! Here’s the lecture transcript separated into distinct sections:
 ---
 
 ### 1. Introduction to Machine Learning
-- Instructor: Welcome back everyone to this discussion where we're talking about why machine learning, why do we use machine learning? What is it useful for, and what is machine learning?
+ we're talking about why machine learning, why do we use machine learning? What is it useful for, and what is machine learning?
 - There's a lot of questions that we haven't answered yet of why we actually go through all this effort to learn about and implement machine learning when we've actually already learned so many skills in data analysis so far.
 - What is it that machine learning allows us to do?
 

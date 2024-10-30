@@ -7,7 +7,7 @@ Sure! Here’s the lecture arranged into respective sections without summarizing
 - to the machine learning overview section of the course.
 - So, it's finally time to dive deeper into machine learning.
 - We've already learned a lot about the Python libraries available to us for data analysis,
-- things like NumPy, Pandas, Jupyter Notebook, Seaborn, Matplotlib,
+- things like NumPy, Pandas, Seaborn, Matplotlib,
 - and now what we're going to do is start shifting our focus into machine learning.
 - And so this particular section on the machine learning overview is designed to help us get in the correct frame of mind for the paradigm shift to machine learning.
 
@@ -44,10 +44,9 @@ Sure! Here’s the lecture arranged into respective sections without summarizing
 - And then to cap it all off, we'll have a quick discussion on the companion book that goes throughout the machine learning algorithms.
 
 ### 5. Structure of the Course
-- Keep in mind, in this particular section, there is no coding.
-- It's purely a discussion on critically important ideas applied to machine learning problems.
+- It's pure a discussion on critically important ideas applied to machine learning problems.
 - You should also keep in mind that many relevant topics will be discussed later on in the course as we discover them,
-- including things like bias-variance trade-off, over-fitting versus under-fitting, cross-validation, feature engineering, Scikit-learn, performance metrics, and much more.
+- including things like bias-variance trade-off, over-fitting versus under-fitting, cross-validation, Scikit-learn, performance metrics, and much more.
 - Pretty much for the rest of the course, we're gonna have these machine learning sections where we have a section for each type of algorithm.
 - For example, we'll have a section for logistic regression, and another section for random forest, or tree based methods,
 - another section for things like K-means clustering, and so on.
@@ -79,13 +78,6 @@ Sure! Here’s the lecture arranged into respective sections without summarizing
 - So, after all that, we'll revisit linear regression to combine everything that we've discovered already
 - for machine learning ideas for a final project exercise.
 
-### 7. Upcoming Sections Structure
-- So the upcoming sections are kind of split into three separate parts,
-- where we're gonna have a quick introduction to linear regression,
-- and then we'll take a step aside and talk about things like performance metrics, feature engineering, and cross-validation,
-- then come back and cap it all off with a linear regression project.
-- So, the first couple of sections in the machine learning lectures, they're gonna be slightly different,
-- but after that, we'll start with the standardized version for every other algorithm.
 
 ### 8. Transition to Use Cases
 - Okay, so let's go ahead and continue by starting to understand why we even use machine learning to begin with,

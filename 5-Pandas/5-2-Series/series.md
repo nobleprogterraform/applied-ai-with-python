@@ -4,9 +4,6 @@ Sure! Here’s a more verbose version of your transcript on the basics of the Pa
 
 ### Introduction to Pandas Series
 
-1. **Welcome to the Lecture**
-   - Welcome, everyone, to this informative lecture dedicated to the Pandas Series object. In today’s session, we will explore the foundational aspects of the Pandas Series, which is a key data structure used in data analysis with the Pandas library.
-
 2. **What is a Pandas Series?**
    - A Pandas Series can be thought of as a one-dimensional array that holds a collection of data, complemented by a named index. This named index is the feature that distinctly sets the Pandas Series apart from a simple NumPy array, which we discussed in the previous section of this course.
    - To provide a formal definition, a Pandas Series is essentially a one-dimensional ndarray (N-dimensional array) that comes equipped with axis labels. This definition might sound technical, so let’s unpack it with a practical example.

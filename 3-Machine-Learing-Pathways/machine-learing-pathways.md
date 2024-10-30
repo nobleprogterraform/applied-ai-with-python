@@ -5,16 +5,12 @@ Absolutely! Here’s the transcript organized into clear sections without removi
 ### Introduction
 Welcome everyone to this lecture on the Machine Learning Pathway. What I want to discuss in this lecture is just a general idea of a pathway of using machine learning and data science for useful real-world applications, such as creating a data report or creating a data product. 
 
-Keep in mind this overview is going to be very broad and, in reality, there's a lot of overlap between the various stages that we're going to be presenting here. You should also note that we're going to try to distinguish various roles in the process, such as what's the difference between a data engineer versus a data analyst versus a data scientist or ML researcher and so on. 
-
-I've often encountered that students, when they're new to the field, have a lot of confusion as far as what's the differences between these titles. You should also keep in mind that there's a lot of overlap between the responsibilities of these roles, and what makes it more confusing is sometimes different organizations label role titles differently. So a data analyst at one technology company may actually be a data scientist at another technology company depending on what their roles do. 
-
-So again, stuff to keep in mind that what we're showing here isn't set in stone. It's just a general concept overview and hopefully something to guide you as far as reading further discussions on machine learning and various roles within data science. And lastly, keep in mind that we're going to be covering all these steps and topics in depth throughout the course. This is just a high-level overview of the general process and pathway that utilizes a machine learning model and data analysis in general.
+It's just a general concept overview and hopefully something to guide you as far as reading further discussions on machine learning and various roles within data science. And lastly, keep in mind that we're going to be covering all these steps and topics in depth throughout the course. This is just a high-level overview of the general process and pathway that utilizes a machine learning model and data analysis in general.
 
 ### Starting with Real-World Problems
 When we actually get to running machine learning models with Python, we're gonna do a much deeper dive as far as what the machine learning process looks like for things like supervised learning versus unsupervised learning. This is basically just showing you how to start from the real world and then create a data product or perform data analysis.
 
-So let's go ahead and begin our discussion of what we're calling this machine learning pathway. To begin, it all starts with the real world, the world that you and I both live in. There are two situations in general that we're going to encounter: we either have a problem that we need to solve or a question that we need to answer. 
+So let's go ahead and begin our discussion of what we're calling this machine learning pathway. To begin, it all starts with the real world,  There are two situations in general that we're going to encounter: we either have a problem that we need to solve or a question that we need to answer. 
 
 So to label these in a general sense, it could be something like, how do I fix or change X out in the real world? That could be a problem I need to solve, or there could be a question I need to answer. So maybe I'm curious about how the change in X affects Y out in the real world. 
 
@@ -57,6 +53,3 @@ After creating successful machine learning models, we can use them to create a s
 So, this right here is our general machine learning pathway: we collect and store the data, clean and organize it, perform exploratory data analysis, and if necessary, create a machine learning model to build a data product that goes back into the real world. This cyclical process starts over again. 
 
 Now that we understand the general dynamics of the data science and machine learning pathway, we can begin to focus on learning various Python libraries well-suited for each of these major components. 
-
-I hope you're super excited. I know I am to dive deep into each of these different steps and the various Python libraries associated with them!
-

@@ -2,7 +2,7 @@
 ### Useful Methods in Pandas: Part 1 - The `apply` Method
 
 **Introduction to Series and DataFrame Methods:**
-- In this series of lecture videos, we delve into various specialized methods in Pandas, aimed at enhancing data manipulation skills.
+- we delve into various specialized methods in Pandas, aimed at enhancing data manipulation skills.
 - The series focuses on dividing these methods into manageable topics, with a linked lecture notebook available for easy navigation to specific sections.
 
 **Overview of the `apply` Method:**
